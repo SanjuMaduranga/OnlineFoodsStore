@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>D & S Food Store</title>
+
 
 <style>
 * {
@@ -375,9 +369,7 @@ footer .copyright{
 }
 </style>
 
-    </head>
 
-    <body>
 
         
         <section id="header">
@@ -499,12 +491,4 @@ footer .copyright{
                 <p>c 2024 - SAN creation | Html CSS Javascript | Online Food Store.</p>
             </div>
         </footer>
- 
 
-
-
-
-        <script src="script.js"></script>
-    </body>
-
-</html>
