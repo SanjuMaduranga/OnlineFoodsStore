@@ -17,10 +17,10 @@
 
             <div>
                 <ul id="navbar">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" >Home</a></li>
                     <li><a href="catagories.html">Catagories</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="Contact.html" class="active">Contact</a></li>
                     <li><a href="cart.html" id="cart"><img src="../Components/Assets/icon/cart-shopping-svgrepo-com.svg" style="width: 30px;height: auto;"></a></li>
                     <a href="#"><img src="../Components/Assets/icon/close-ellipse-svgrepo-com.svg" id="close" style="width: 30px;height: auto;"></a>
                 </ul>
@@ -31,48 +31,69 @@
             </div>
         </section>
 
-        <section id="hero">
-            <h2>Come & Taste</h2>
-            <h1>Welcome to Food Store</h1>
-            <p>You can Ordering Foods easy now!</p>
-            <button>ORDER NOW</button>
+        <section id="about">
+            <div id="subtopic">
+                <h2>Contact Us</h2>
+                <p>Join with Us.</p>
+            </div>
         </section>
 
-        <div id="desc">
-            <h1 style="color: black; text-align: center;">D & S FOOD PRODUCTS</h1>
-            <p>Welcome to D & S Food Products, your premier destination for an unparalleled online culinary experience! 
-                <br>At D & S, we take pride in curating a diverse and delectable selection of high-quality food products
-                <br> that cater to every palate. Our user-friendly online delivering food store brings the finest ingredients 
-                <br>and gourmet delights right to your doorstep, ensuring that your culinary adventures are always elevated.</p>
-        </div>
+        <section id="fd-form">
+            
+            <div id="cont">
+                <div id="fd-topic">
+                    <h3>Give Feedback</h3>
+                </div>
+                <form action="#">
+                  <label for="fname">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+              
+                  <label for="email">E-mail Address</label>
+                  <input type="text" id="email" name="email" placeholder="Your email address..">
+              
+                  <label for="subject">Feedback</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
 
         <div id="banner">
             <img src="../Components/Assets/cover/Cover.jpg">
         </div>
 
-        <div id="fe-topic">
-            <h2>FEATURES</h2>
-            <p>Advantages within Connect with Us.</p>
+        <div class="doubleSideCont">
+            <div class="left-side">
+              <!-- Content for the left side goes here -->
+              <div id="con-info">
+                 <h3 style="text-align: center; margin-top: 10px; margin-bottom: 10px; 
+                 font-size: 20px; font-weight: 700;">Contact Info</h3>
+                 <p><strong>Address:</strong> No.23, MainStreet, Godakawela, Rathnapura.</p>
+                 <p><strong>Phone:</strong> +94 45 4565656</p>
+                 <p><strong>Hours:</strong> 9am to 10pm</p>
+              </div>
+            </div>
+        
+            <div class="right-side">
+              <div id="map">
+                 <h3 style="text-align: center; margin-top: 10px; margin-bottom: 10px; font-size: 20px; font-weight: 700;">Our Location</h3>
+                 <iframe
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1378104083774!2d80.64773831426652!3d6.50423332519277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb49a599eb5c50b0d!2zNsKwMzAnMTUuMiJOIDgwwrAzOCc1OS43IkU!5e0!3m2!1sen!2slk!4v1661606459521!5m2!1sen!2slk">
+                 </iframe>
+              </div>
+            </div>
         </div>
 
-        <section id="feature" class="section-p1">
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/deliver.png">
-                <h6>Fast Delivering</h6>
-            </div>
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/food.png">
-                <h6>Fresh Foods</h6>
-            </div>
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/time.png">
-                <h6>Timely Service</h6>
-            </div>
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/custSer.png">
-                <h6>Good Service</h6>
-            </div>
-        </section>
+
+
+
 
         <section id="signup" class="section-p1">
             <div class="signtext">
@@ -136,8 +157,9 @@
 
 
 
-        <script src="script.js"></script>
+        <script src="script.js">
+
+        </script>
     </body>
 
 </html>
-
