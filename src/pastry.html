@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>D & S Food Store</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lGpGs/K9eL5KfuBLU8hvTlOSctOnf6bP4IBtWqVBDjZjU6Q/vhp5s0SUpQT63qnh" crossorigin="anonymous">
+
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -17,15 +17,15 @@
 
             <div>
                 <ul id="navbar">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" >Home</a></li>
                     <li><a>
-                        <div class="dropdown">
+                        <div class="dropdown" class="active">
                             <a  href="catagories.html">Catagories</a>
                             <div class="dropdown-content">
-                                <a href="cake.html">Cakes</a>
-                                <a href="juices.html">Juices</a>
-                                <a href="pastry.html">Pastry</a>
-                                <a href="others.html">Others</a>
+                              <a href="cake.html">Cakes</a>
+                              <a href="juices.html">Juices</a>
+                              <a href="pastry.html">Pastry</a>
+                              <a href="others.html">Others</a>
                             </div>
                         </div></a>
                     </li>
@@ -41,50 +41,71 @@
             </div>
         </section>
 
-        <section id="hero">
-            
-                <h2>Come & Taste</h2>
-                <h1>Welcome to Food Store</h1>
-                <p>You can Ordering Foods easy now!</p>
-                <button>ORDER NOW</button>
-            
+        <section id="page-header">
+            <h1>CATAGORIES</h1>
+            <p>You can Searing & Exploring Foods!</p>
+           
+            <input type="search" placeholder="Search Foods" style="padding-left: 20px;">
+
         </section>
 
-        <div id="desc">
-            <h1 style="color: black; text-align: center;">D & S FOOD PRODUCTS</h1>
-            <p>Welcome to D & S Food Products, your premier destination for an unparalleled online culinary experience! 
-                <br>At D & S, we take pride in curating a diverse and delectable selection of high-quality food products
-                <br> that cater to every palate. Our user-friendly online delivering food store brings the finest ingredients 
-                <br>and gourmet delights right to your doorstep, ensuring that your culinary adventures are always elevated.</p>
-        </div>
+        <section id="cata">
+            <div id="sub-top">
+                <h2>PASTRY</h2>
+                <p>Taste your choice.Get it your choices.</p>
+            </div>
+
+            <div class="box-con">
+                <div id="box">
+                    <img src="../Components/Assets/pastry/Burger.jpg">
+                    <h3>Burger</h3>
+                    <span>Rs.300.00</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+               
+                <div id="box">
+                    <img src="../Components/Assets/pastry/Chicken rolls.jpg">
+                    <h3>Chicken Rolls</h3>
+                    <span>Rs.250.00</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                    
+                </div>
+              
+                <div id="box">
+                    <img src="../Components/Assets/pastry/Cream bun.jpg">
+                    <h3>Cream Bun</h3>
+                    <span>Rs.100.00</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div id="box">
+                    <img src="../Components/Assets/pastry/Pastri.jpg">
+                    <h3>Pastri</h3>
+                    <span>Rs.120.00</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+             
+                <div id="box">
+                    <img src="../Components/Assets/pastry/Sandiwiches.jpg">
+                    <h3>Sandiwiches</h3>
+                    <span>Rs.200.00</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                  
+                <div id="box">
+                    <img src="../Components/Assets/pastry/Sossge pastri.jpg">
+                    <h3>Sossge Pastri</h3>
+                    <span>Rs.150.00</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>  
+
+        </section>
 
         <div id="banner">
             <img src="../Components/Assets/cover/Cover.jpg">
         </div>
 
-        <div id="fe-topic">
-            <h2>FEATURES</h2>
-            <p>Advantages within Connect with Us.</p>
-        </div>
-
-        <section id="feature" class="section-p1">
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/deliver.png">
-                <h6>Fast Delivering</h6>
-            </div>
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/food.png">
-                <h6>Fresh Foods</h6>
-            </div>
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/time.png">
-                <h6>Timely Service</h6>
-            </div>
-            <div class="fe-box">
-                <img src="../Components/Assets/icon/custSer.png">
-                <h6>Good Service</h6>
-            </div>
-        </section>
 
         <section id="signup" class="section-p1">
             <div class="signtext">
@@ -148,27 +169,10 @@
 
 
 
-        <script>
-            //var slideImg = document.getElementById('hero');
-
-            var images = new array(
-                "../Components/Assets/cover/pic.jpg",
-                "../Components/Assets/other/pic-2.jpg",
-                "../Components/Assets/other/pic-5.jpg"
-            );
-
-            var length = images.length;
-            var i = 0;
-
-            function slider(){
-                if(i > len-1){
-                    i = 0;
-                }
-                slideImg.src = images[i];
-                i++;
-                setTimeout('slider()',3000);
-            }
-        </script>
+        <script src="script.js"></script>
     </body>
 
+    
+
 </html>
+
