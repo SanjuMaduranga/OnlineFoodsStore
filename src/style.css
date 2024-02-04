@@ -59,6 +59,19 @@ body{
 .logo{
     width: 70px;
     height: 70px;
+    display: inline-block; 
+    animation: rotateAnimation 4s linear infinite;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 #navbar{
@@ -182,11 +195,27 @@ body{
 
 #hero h2{
     padding-bottom: 20px;
+    opacity: 0; 
+    animation: fadeIn 2.8s ease-in-out forwards; 
 }
+
 
 #hero h1{
     padding-bottom: 20px;
+    opacity: 0; 
+    animation: fadeIn 2.8s ease-in-out forwards; 
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+
+
 
 #hero button{
     background: linear-gradient(#ffb13b, #000000);
